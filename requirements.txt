@@ -1,0 +1,26 @@
+# Core Scientific & Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+pyarrow>=12.0.0
+
+# Database & Aggregation
+duckdb>=0.9.0
+
+# Classical Time Series & Statistical Modeling
+statsmodels>=0.14.0
+pmdarima>=2.0.0
+GPy>=1.10.0
+
+# Deep Learning (PyTorch)
+# Lưu ý: Với GPU CUDA, khuyến nghị cài torch qua lệnh riêng của PyTorch
+torch>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter Environment
+jupyter>=1.0.0
+ipykernel>=6.20.0
