@@ -44,7 +44,7 @@ df_selected['consumption_per_building'] = df_selected['y'] / df_selected['cluste
 cols = columns_to_extract[:13] + ['consumption_per_building'] + columns_to_extract[13:]
 df_selected = df_selected[cols]
 
-# Save to new CSV file
+
 output_file = 'extracted_columns.csv'
 print(f"Saving to {output_file}...")
 df_selected.to_csv(output_file, index=False)

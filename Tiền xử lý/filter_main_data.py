@@ -38,7 +38,7 @@ def filter_main_data():
         print(f"\n📥 Step 1: Reading {filter_file}...")
         filter_df = pd.read_csv(filter_file)
         unique_ids = filter_df['unique_id'].unique().tolist()
-        print(f"   ✅ Found {len(unique_ids):,} unique_ids to filter")
+        print(f"   Found {len(unique_ids):,} unique_ids to filter")
         
         # Step 2: Read main_data.parquet and get column info
         print(f"\n📥 Step 2: Reading {main_data_file}...")
@@ -47,7 +47,7 @@ def filter_main_data():
         """).fetchall()
         
         all_columns = [col[0] for col in columns_info]
-        print(f"   ✅ Found {len(all_columns)} columns")
+        print(f"    Found {len(all_columns)} columns")
         
         # Step 3: Identify columns to remove
         # Remove 'dataset' column

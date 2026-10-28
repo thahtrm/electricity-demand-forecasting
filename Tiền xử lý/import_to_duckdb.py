@@ -90,7 +90,7 @@ def import_parquet_to_duckdb():
             print(sample.to_string())
             print()
         except Exception as e:
-            print(f"   ⚠️  Could not fetch sample from {table_name}: {str(e)}")
+            print(f"   Warning: Could not fetch sample from {table_name}: {str(e)}")
     
     print(f"\n Import completed!")
     print(f" Database saved to: data.duckdb")
